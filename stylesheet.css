@@ -45,9 +45,9 @@ img{
 }
 
 .imgWrap{
+    display: inline-block;
     position: relative;
     margin: 0;
-    display: inline-block;
 }
 
 .imgWrap:hover .imgDescription{

@@ -1,0 +1,147 @@
+*{
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    box-sizing: border-box;
+    outline: none !important; *
+}
+
+html{ 
+    height: 100%;
+    width:100%;
+}
+
+html,body{
+    width: 100%;
+    height: 100%; 
+    position: relative; 
+}
+
+body{
+   margin:0 auto; 
+}
+
+a{
+    color: #282828;
+    text-decoration: none;
+    text-align: center;
+}
+
+img{ 
+    display: block;
+    margin: 0 auto;
+}
+
+.title{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5em; 
+    padding: 50 0 0 0;
+}
+
+.title img{
+    height: 100px;
+}
+
+.imgWrap{
+    position: relative;
+    margin: 0;
+}
+
+.imgWrap:hover .imgDescription{
+    visibility: visible;
+    opacity: 1;
+}
+
+.imgDescription{
+    position:absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    visibility: hidden;
+    opacity: 0;
+
+    -webkit-transition: all 0.0s ease-in-out;
+    -moz-transition: all 0.0s ease-in-out;
+    -o-transition: all 0.0s ease-in-out;
+    transition: 0.0s ease-in-out;
+}
+
+.imgDescription img{
+    margin: 0 auto;
+}
+
+
+/* -- MERCHANDISE -- */
+
+.merchandise{
+    margin: 0 auto;
+    text-align: center;
+    padding: 50 0 50 0;
+}
+
+.merch{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+}
+
+.merch img{
+    height: 500px;
+}
+
+.merch p{
+    width: 100%;
+    line-height: 25px;
+}
+
+/* -- END MERCHANDISE -- */
+
+
+/* -- BACKGROUND VIDEO -- */
+
+#video-background {
+    position: fixed;
+    left: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -100;
+}
+
+/* -- END BACKGROUND VIDEO -- */
+
+
+/* -- SCREEN SIZE RESPONSES -- */
+
+@media (min-width: 1440px){
+    .merchandise {width:1200px;}
+    .merch img{height: 480px;}
+    .merch {padding: 20 50 20 50;}
+}
+
+@media (max-width: 1030px){
+    .merch img{height: 300px;}
+    .merch {padding: 20 50 20 50;}
+    #video-background {left:-30em;}
+}
+
+@media (max-width: 900px){
+    .merch img{height: 280px;}
+    .merch {padding: 0 30 0 30;}
+}
+
+@media (max-width: 767px){
+    .merch img{height: 250px;}
+    .merch{padding: 0 0 20 0;}
+    .title img{height: 80px;}
+}
+
+@media (max-width: 350px){
+    .merch img{height: 220px;}
+}
+
+/* -- END SCREEN SIZE RESPONSES -- */
